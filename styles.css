@@ -90,9 +90,25 @@ h1, h2, h3 { font-family: var(--font-display); }
 .course-summary { max-width: 465px; margin-bottom: 13px; color: #58647c; font-size: 13px; line-height: 1.55; }
 .course-opportunities { max-width: 465px; margin: 0 0 18px; color: #6c7689; font-size: 11px; line-height: 1.5; }
 .course-opportunities strong { margin-right: 6px; color: var(--ink); }
+.course-requirement { margin: 0 0 12px; color: #58647c; font-size: 11px; line-height: 1.5; }
+.course-requirement strong { margin-right: 6px; color: var(--ink); }
 .course-meta { display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto; padding-top: 13px; border-top: 1px solid #e9ece6; }
 .course-meta span { padding: 5px 8px; background: #f1f3ef; color: #4d5971; font-size: 10px; font-weight: 600; }
+.course-interest-link { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 13px; color: var(--course-color); font-size: 11px; font-weight: 700; }
+.course-interest-link:hover { color: var(--navy); }
+.course-offerings { display: grid; gap: 15px; margin-top: auto; }
+.course-offering + .course-offering { padding-top: 14px; border-top: 1px solid #e9ece6; }
+.course-offering .course-requirement { margin-bottom: 0; }
+.course-offering .course-meta { margin-top: 0; }
+.course-offering .course-interest-link { margin-top: 10px; }
 .course-note { margin: 19px 0 0; color: #737d8f; font-size: 11px; }
+
+.enrollment-section { padding-block: 95px 105px; }
+.enrollment-section .section-heading { align-items: center; margin-bottom: 20px; }
+.enrollment-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.enrollment-description { max-width: 630px; margin-bottom: 25px; color: #606b82; font-size: 14px; line-height: 1.65; }
+.enrollment-preview { height: 650px; overflow: hidden; border: 1px solid var(--line); background: var(--white); }
+.enrollment-preview iframe { display: block; width: 100%; height: 100%; border: 0; }
 
 .school-section { overflow: hidden; background: var(--navy); color: var(--white); }
 .school-inner { display: grid; grid-template-columns: 1fr .83fr; gap: 100px; padding-block: 100px; }
@@ -135,7 +151,8 @@ h1, h2, h3 { font-family: var(--font-display); }
 
 @media (max-width: 900px) {
   .header-inner, .section-wrap, .hero-inner, .footer-inner { width: min(100% - 48px, 720px); }
-  .primary-nav { gap: 20px; }
+  .primary-nav { gap: 10px; }
+  .nav-contact { gap: 8px; padding-inline: 12px; }
   .hero-inner { min-height: 570px; grid-template-columns: 1fr .85fr; gap: 25px; }
   .hero h1 { font-size: 46px; }
   .hero-visual { min-height: 410px; }
@@ -182,6 +199,11 @@ h1, h2, h3 { font-family: var(--font-display); }
   .course-card h3 { font-size: 22px; }
   .course-opportunities { margin-bottom: 14px; }
   .course-note { line-height: 1.6; }
+  .enrollment-section { padding-block: 72px; }
+  .enrollment-section .section-heading { margin-bottom: 18px; }
+  .enrollment-actions { margin-top: 20px; }
+  .enrollment-actions .button { flex: 1 1 auto; }
+  .enrollment-preview { height: 500px; }
   .school-inner { grid-template-columns: 1fr; gap: 38px; padding-block: 72px; }
   .school-statement h2 { margin-block: 17px; }
   .school-statement > p:not(.eyebrow) { font-size: 14px; }
