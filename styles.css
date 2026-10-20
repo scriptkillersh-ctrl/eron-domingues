@@ -34,6 +34,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .primary-nav > a:not(.nav-contact):hover { color: #087b75; }
 .nav-contact { display: inline-flex; min-height: 44px; align-items: center; gap: 14px; padding: 0 17px; border: 1px solid #cbd1c7; border-radius: 3px; }
 .nav-contact span, .text-link span { font-size: 16px; }
+.course-index { padding-block: 0 14px; color: #606b82; font-size: 11px; font-weight: 700; }
+.course-index > span { margin-right: 8px; color: var(--navy); }
+.course-index a { display: inline-block; margin: 0 8px 5px 0; padding: 4px 9px; border: 1px solid #d5dbd2; border-radius: 3px; color: var(--navy); transition: border-color 180ms ease, color 180ms ease; }
+.course-index a:hover { border-color: #087b75; color: #087b75; }
 .menu-toggle { display: none; }
 
 .hero { position: relative; overflow: hidden; background-color: var(--paper); background-image: linear-gradient(rgba(16,30,71,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(16,30,71,.035) 1px, transparent 1px); background-size: 36px 36px; }
@@ -103,6 +107,15 @@ h1, h2, h3 { font-family: var(--font-display); }
 .course-offering .course-interest-link { margin-top: 10px; }
 .course-note { margin: 19px 0 0; color: #737d8f; font-size: 11px; }
 
+.interest-highlight { background: var(--navy); color: var(--white); }
+.interest-highlight-inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; padding-block: 48px; }
+.interest-highlight .eyebrow { color: var(--mint); }
+.interest-highlight h2 { margin: 12px 0 10px; color: var(--white); font-family: var(--font-display); font-size: 28px; font-weight: 800; line-height: 1.2; }
+.interest-highlight p:not(.eyebrow) { max-width: 720px; margin: 0; color: #d0d6e2; font-size: 14px; line-height: 1.65; }
+.interest-highlight-button { flex: 0 0 auto; background: var(--yellow); color: var(--navy); }
+.interest-highlight-button span { color: var(--navy); font-size: 18px; }
+.interest-highlight-button:hover { background: #ffd15b; }
+
 .enrollment-section { padding-block: 95px 105px; }
 .enrollment-section .section-heading { align-items: center; margin-bottom: 20px; }
 .enrollment-actions { display: flex; flex-wrap: wrap; gap: 12px; }
@@ -153,6 +166,7 @@ h1, h2, h3 { font-family: var(--font-display); }
   .header-inner, .section-wrap, .hero-inner, .footer-inner { width: min(100% - 48px, 720px); }
   .primary-nav { gap: 10px; }
   .nav-contact { gap: 8px; padding-inline: 12px; }
+  .course-index { padding-bottom: 10px; }
   .hero-inner { min-height: 570px; grid-template-columns: 1fr .85fr; gap: 25px; }
   .hero h1 { font-size: 46px; }
   .hero-visual { min-height: 410px; }
@@ -168,6 +182,7 @@ h1, h2, h3 { font-family: var(--font-display); }
   html { scroll-padding-top: 72px; }
   .header-inner, .section-wrap, .hero-inner, .footer-inner { width: calc(100% - 40px); }
   .header-inner { min-height: 72px; }
+  .course-index { font-size: 10px; }
   .school-brand img { width: 44px; height: 44px; }
   .brand-name strong { font-size: 14px; }
   .menu-toggle { display: grid; width: 44px; height: 44px; align-content: center; justify-items: center; gap: 6px; border: 1px solid #cbd1c7; border-radius: 3px; background: transparent; cursor: pointer; }
@@ -199,6 +214,9 @@ h1, h2, h3 { font-family: var(--font-display); }
   .course-card h3 { font-size: 22px; }
   .course-opportunities { margin-bottom: 14px; }
   .course-note { line-height: 1.6; }
+  .interest-highlight-inner { display: block; padding-block: 36px; }
+  .interest-highlight h2 { font-size: 25px; }
+  .interest-highlight-button { width: 100%; margin-top: 20px; }
   .enrollment-section { padding-block: 72px; }
   .enrollment-section .section-heading { margin-bottom: 18px; }
   .enrollment-actions { margin-top: 20px; }
